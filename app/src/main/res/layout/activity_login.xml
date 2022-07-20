@@ -59,7 +59,7 @@
         android:layout_height="wrap_content"
         android:text="Don't have an account?"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintBottom_toTopOf="@+id/login_reg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -67,7 +67,7 @@
         app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/login_reg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="REGISTER "
@@ -88,7 +88,7 @@
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="@+id/textView2" />
+        app:layout_constraintStart_toEndOf="@+id/login_reg"
+        app:layout_constraintTop_toTopOf="@+id/login_reg" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

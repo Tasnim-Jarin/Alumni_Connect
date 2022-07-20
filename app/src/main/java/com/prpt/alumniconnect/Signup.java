@@ -7,6 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class Signup extends AppCompatActivity {
     EditText sign_firstname, sign_lastname, sign_email, sign_pass, sign_dept, sign_id, sign_batch, sign_session;
     Button signup;
@@ -35,7 +38,8 @@ public class Signup extends AppCompatActivity {
                 b.setDept(sign_dept.getText().toString());
                 b.setId(sign_id.getText().toString());
                 b.setSession(sign_session.getText().toString());
-
+                DatabaseReference dr=FirebaseDatabase.getInstance().getReference("signup");
+                dr.push().setValue(b);
             }
         });
     }
